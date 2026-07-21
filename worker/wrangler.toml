@@ -1,0 +1,16 @@
+name = "portfolio-api"
+main = "src/index.js"
+compatibility_date = "2024-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "portfolio-db"
+database_id = "e764a7f1-e4d3-4625-a86a-8dfda89b1cdb"
+
+# Set these with `wrangler secret put <NAME>` before deploying — never commit real values.
+# ADMIN_PASSWORD_HASH  -> PBKDF2 hash of your admin password (see README for the generator script)
+# ADMIN_PASSWORD_SALT  -> random salt used to create that hash
+# JWT_SECRET           -> long random string used to sign admin session tokens
+
+[vars]
+ALLOWED_ORIGIN = "https://your-portfolio.pages.dev"
